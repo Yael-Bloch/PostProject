@@ -1,0 +1,218 @@
+/* Todos.css */
+
+/* כלליים */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    min-width: 1000px;
+    background-image: linear-gradient(135deg, #4a90e2, #a7b9c7);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    /* תבטלי את הגובה המלא */
+    display: block;
+    /* תשתמשי בפריסה רגילה */
+  }
+  
+  
+  /* הקונטיינר של האלבומים */
+  .todos-page-container {
+    margin: 0px auto;
+    /* ריווח מהחלק העליון */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, #4a90e2, #a7b9c7);
+    width: 90%;
+  }
+  
+  .todos-container {
+    background-color: azure;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+  }
+  
+  /* כותרת */
+  .todos-title {
+    font-size: 36px;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* קונטיינר של רשימת האלבומים */
+  .todos-list {
+  
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* מרווח בין האלבומים */
+    justify-content: center;
+    /* למרכז את האלבומים */
+  }
+  
+  /* כרטיס אלבום */
+  .todo-card {
+    background-image: url('../assets/task.png');
+    background-repeat: no-repeat;
+    background-size: 80px 95px;
+    background-position: left;
+    padding: 20px;
+    border-radius: 10px;
+    width: 98%;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .todo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.288);
+  }
+  
+  .todo-title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin: 40px;
+  }
+  
+  .todo-id {
+    font-size: 14px;
+    color: #777;
+    margin: 40px;
+  }
+  
+.todo-completed{
+    margin:  40px 40px 40px 10px;
+    transform: scale(1.5); /* משנה את גודל ה-checkbox */
+    width: 20px; /* ניתן להוסיף רוחב */
+    height: 20px; /* ניתן להוסיף גובה */
+    
+}
+
+  /* טיפול בשגיאות */
+  .error-message {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .todosAddition {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 82%;
+    margin: 20px 100px;
+    
+  }
+  
+  .todosAddition input {
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: #9cc3ef;
+    flex-grow: 4;
+    border-radius: 5px;
+  }
+  
+  .todosAddition button {
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    vertical-align: middle;
+    background-color: #9cc3ef;
+  }
+  
+  /* כלליים */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #002540;
+  /* טקסט כהה */
+}
+
+.sorts-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #4a90e2;
+  
+}
+
+/* כותרת */
+.sorts-container label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #002540;
+}
+
+/* תיבה של בחירת סוג הסינון */
+.sorts-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  background-color: #e7f2fc;
+  color: #002540;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.sorts-container select:focus {
+  border-color: #357ab7;
+  outline: none;
+}
+
+/* שדה קלט */
+
+
+/* אפקטי מעבר */
+.filters-container select:hover,
+.filters-container input:hover {
+  border-color: #2c6fa0;
+  background-color: #d9ecfa;
+}
+
+/* רווחים */
+.sorts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sorts label {
+  margin-bottom: 5px;
+}
+
+.filters-container label[for="search"] {
+  margin-bottom: 15px;
+}
+  

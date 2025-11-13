@@ -1,0 +1,128 @@
+/* Albums.css */
+
+/* כלליים */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  min-width: 1000px;
+  background-image: linear-gradient(135deg, #4a90e2, #a7b9c7);
+  margin: 0;
+  padding: 0;
+  height: auto;
+  /* תבטלי את הגובה המלא */
+  display: block;
+  /* תשתמשי בפריסה רגילה */
+}
+
+
+/* הקונטיינר של האלבומים */
+.albums-page-container {
+  margin: 0px auto;
+  /* ריווח מהחלק העליון */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: linear-gradient(135deg, #4a90e2, #a7b9c7);
+  width: 90%;
+}
+
+.albums-container {
+  background-color: azure;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 20px;
+}
+
+/* כותרת */
+.albums-title {
+  font-size: 36px;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* קונטיינר של רשימת האלבומים */
+.albums-list {
+
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* מרווח בין האלבומים */
+  justify-content: center;
+  /* למרכז את האלבומים */
+}
+
+/* כרטיס אלבום */
+.album-card {
+  background-image: url('../assets/image-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  /* גודל קבוע לכל כרטיס */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  text-align: center;
+  height: 190px;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.288);
+}
+
+.album-title {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.album-id {
+  font-size: 14px;
+  color: #777;
+}
+
+/* טיפול בשגיאות */
+.error-message {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+}
+
+.albumAddition {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 82%;
+  margin: 20px 100px;
+  
+}
+
+.albumAddition input {
+  width: 400px;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: #9cc3ef;
+  flex-grow: 4;
+  border-radius: 5px;
+}
+
+.albumAddition button {
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  vertical-align: middle;
+  background-color: #9cc3ef;
+}
+
